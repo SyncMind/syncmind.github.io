@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Theme: Eventually by HTML5 UP	|	html5up.net | @ajlkn	| 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SyncMind.org</title>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="Electronics and Computer Engineer" />
+		<link rel="shortcut icon" type="image/png" href="images/favicon1.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			body {font-family: 'Crimson Text', 'Times New Roman', Helvetica, serif;}
+			.callout {
+			  position: absolute;
+			  top: 1.6em;
+			  right: 5em;
+			  margin-left: 20px;
+			  max-width: 600px;
+			  opacity:0.5;
+			}
+
+			.callout-header {
+			  padding: 8px 20px;
+			  background: #555;
+			  font-size: 20px;
+			  color: white;
+			}
+
+			.callout-container {
+			  padding: 8px 20px;
+			  background-color: #ccc;
+			  font-size: 17px;
+			  color: black;
+			}
+
+			.closebtn {
+			  position: absolute;
+			  top: 5px;
+			  right: 15px;
+			  color: black;
+			  font-size: 30px;
+			  cursor: pointer;
+			}
+
+			.closebtn:hover {
+			  color: lightgrey;
+			  opacity:1;
+			}
+
+			#panel {
+			  display: none;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<img src="images/logo-syncmind-light-cropped.png" alt="syncmind_logo.png" style="width:640px;">
+				<!-- <h1>SyncMind</h1> -->
+				<p>We think and thus, we enable.</p>
+				<ul class="menu">
+					<li> <a href="#" onclick="showPanel()">Research</a></li>
+					<li> <a href="#" onclick="showPanel()">Careers</a></li>
+					<li> <a href="#" onclick="showPanel()">About</a></li>					
+				</ul>
+
+			<div class="callout" id="panel">
+			  <div class="callout-header">We're Coming Soon.</div>
+			  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+			  <div class="callout-container">
+			    <p style="color:black;">You can keep up with our updates on our Social. &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			       </br>We'll be officially rolling out in January, 2022.</p>
+			  </div>
+			</div>
+			</header>
+
+		<!-- Signup Form -->
+		<!--	<form id="signup-form" method="post" action="#">
+				<input type="email" name="email" id="email" placeholder="Email Address" />
+				<input type="submit" value="Sign Up" />
+			</form>	-->
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.twitter.com/syncmindai/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/company/syncmindai/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/SyncMind/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:amitabhyadav@protonmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>SyncMind &copy; 2021.</li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+			<script>function showPanel() { 
+					document.getElementById("panel").style.display = "block"; 
+				}
+			</script>
+	</body>
+</html>
