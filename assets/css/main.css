@@ -127,9 +127,9 @@ body {
 
 			.callout {
 			  position: absolute;
-			  top: 1.6em;
-			  right: 5em;
-			  margin-left: 20px;
+			  top: auto;
+			  left: auto;
+			  margin-left: 2em;
 			  max-width: 600px;
 			  opacity:0.5;
 			}
