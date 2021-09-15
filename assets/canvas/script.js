@@ -313,9 +313,9 @@
 
     // calculate the new velocity based on the noise
     // random velocity in a random direction
-    this.v.x += (rnd * Math.sin(a) + this.g.simplex3d(xx, yy, -zz)); // sin or cos, no matter
-    this.v.y += (rnd * Math.cos(a) + this.g.simplex3d(xx, yy, zz));  // opposite zz's matters
-    
+    this.v.x += 0.5*(rnd * Math.sin(a) + this.g.simplex3d(xx, yy, zz)); // sin or cos, no matter
+    this.v.y += 0.5*(rnd * Math.cos(a) + this.g.simplex3d(xx, yy, -zz));  // opposite zz's matters
+
     if(this.m.state.left) {
       // add a difference between mouse pos and particle pos (a fraction of it) to the velocity.
       this.v.add(this.m.position.clone().sub(this.p).mul(.00085));
@@ -366,14 +366,14 @@ window.addEventListener('load', function() {
       hue = 0, particles = [], resize,
       width, height, bounds = new Vector3D(0, 0, 0),
       settings = {
-        particleNum: 5000,
+        particleNum: 7000,
         fadeOverlay: true,
         rotateColor: true,
         staticColor: {r: 0, g: 75, b: 50},
         staticColorString: 'rgba(0, 75, 50, 0.55)'
       };
 
-  stats.setMode(0); // Start off with FPS mode
+  stats.setMode(2); // Start off with FPS mode
 
   // Place the statistics at the bottom right.
   stats.domElement.style.position = 'absolute';
