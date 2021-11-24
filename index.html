@@ -33,19 +33,76 @@
 				<img src="./images/logo-syncmind.png" alt="syncmind_logo.png" style="pointer-events: none; width:70%; height:auto; max-width:600px; max-height:auto; margin: auto auto 1.5em 2em;">
 				<!-- <h1>SyncMind</h1> -->
 				<ul class="menu" style="margin: auto auto 2em 2em;">
-					<li> <a href="#" onclick="showPanel()">Research</a></li>
-					<li> <a href="#" onclick="showPanel()">Developer</a></li>
-					<li> <a href="#" onclick="showPanel()">Careers</a></li>
-					<li> <a href="#" onclick="showPanel()">About</a></li>					
+					<li> <a href="#" onclick="showResearchPanel()">Research</a></li>
+					<li> <a href="#" onclick="showDeveloperPanel()">Developer</a></li>
+					<li> <a href="#" onclick="showCareersPanel()">Careers</a></li>
+					<li> <a href="#" onclick="showAboutPanel()">About</a></li>					
 				</ul>
 
-			<div class="callout" id="panel">
-			  <div class="callout-header">We're Coming Soon.</div>
+			<div class="callout" id="panelRes">
+			  <div class="callout-header">Research</div>
 			  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
 			  <div class="callout-container">
-			    <p style="color:black;">You can keep up with our updates on our social media or contact us at support@syncmind.org</p>
+			    <p style="color:black;">We are a full-stack computing and semiconductor engineering company specializing in streamlining the process of interpretation of neural signals from the brain through our integrated AI development platform.</p>
+				<p style="color:black;">With SyncMind’s integrated Neural Platform, neuroscientists and neurosurgeons can accelerate research and diagnosis of neural ailments, pave the way for advanced neuro-electronic therapy and bio-electronics interface applications.</p>
+				<p style="color:black;">We bring together a community of engineers, mathematicians, cryptographers, data scientists, geneticists and neuroscientists to create a reliable, secure and cutting edge platform to extend the reaches of our understanding of the human brain.</p>
 			  </div>
 			</div>
+
+			<div class="callout" id="panelDev">
+				<div class="callout-header">Developer</div>
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+				<div class="callout-container">
+				  <p style="color:black;">We build full-stack computing platforms for Neural Signal Processing, Deep Brain Stimulation, and AI for brain-computer interface applications.</p>
+				  <p style="color:black;">We’re integrating advanced architectures in Memory, Processing Systems, Compilation tool-chain, Kernel, Architectural and Microelectronics layers of our integrated platform for neural signal processing and inference.</p>
+				  <p style="color:black;">We welcome talented engineers and developers in our team to work with us across all the layers of the computing stack.</p>
+				  <p style="color:black;">You can <a href="mailto:support@syncmind.org?subject=SyncMind Subscribe to Newsletter"> e-mail us at support@syncmind.org</a> to be the first to get informed about our beta-release.</p>
+				</div>
+			  </div>
+
+			  <div class="callout" id="panelCareers">
+				<div class="callout-header">Careers</div>
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+				<div class="callout-container">
+					<p style="color:black;">Sorry, currently we have no open positions.</p>
+					<p style="color:black;">For pursuing a research project with us, you can email our lead developers at <a href="mailto:support@syncmind.org?subject=Career at SyncMind">support@syncmind.org</a>.</p>
+				</div>
+			  </div>
+
+			  <div class="callout" id="panelAbout">
+				<div class="callout-header">About</div>
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+				<div class="callout-container">
+					<p style="color:black;"></p>
+						<strong style="color:black; font-size: large;">Our Team:</strong><br>
+						<style type="text/css">
+							.tg  {border-collapse:collapse; border-spacing:0;}
+							.tg td{border-color:black; border-style:solid;border-width:0px;font-size:14px;
+							  overflow:hidden;padding:10px 5px;word-break:normal;}
+							.tg th{border-color:black;border-style:solid;border-width:0px;font-size:14px;
+							  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+							.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+							.tg .tg-0lax{text-align:left;vertical-align:top}
+							</style>
+							<table class="tg">
+							<tbody>
+							  <tr>
+								<th class="tg-0lax"></th>
+								<th class="tg-0pky" style="font-size: large;"><strong style="color:black;">&emsp; Amitabh Yadav</strong><br>&emsp; Research Fellow, CERN</th>
+								<th class="tg-0pky"></th>
+								<th class="tg-0pky" style="font-size: large;"><strong style="color:black;"> &emsp; &emsp; Aurojyoti Das</strong><br> &emsp; &emsp; Ph.D. Candidate, imec</th>
+								<th class="tg-0lax"></th>
+								<th class="tg-0lax"></th>
+							  </tr>
+							</tbody>
+							</table>
+						Email: &emsp; <a href="mailto:support@syncmind.org?subject=Contact Form">support@syncmind.org</a><br>
+						Social: &emsp; <a href="https://www.twitter.com/syncmindai/" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+						&nbsp; &nbsp; <a href="https://www.linkedin.com/company/syncmindai/" class="icon brands fa-linkedin"><span class="label" s>LinkedIn</span></a>
+					</p>
+				</div>
+			  </div>
+
 			</header>
 
 		<!-- Footer -->
@@ -65,8 +122,32 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
-			<script>function showPanel() { 
-					document.getElementById("panel").style.display = "block"; 
+			<script>function showResearchPanel() { 
+					document.getElementById("panelRes").style.display = "block";
+					document.getElementById("panelDev").style.display = "none"; 
+					document.getElementById("panelCareers").style.display = "none"; 
+					document.getElementById("panelAbout").style.display = "none"; 
+				}
+			</script>
+			<script>function showDeveloperPanel() { 
+					document.getElementById("panelDev").style.display = "block";
+					document.getElementById("panelRes").style.display = "none"; 
+					document.getElementById("panelCareers").style.display = "none"; 
+					document.getElementById("panelAbout").style.display = "none"; 
+				}
+			</script>
+			<script>function showCareersPanel() { 
+					document.getElementById("panelCareers").style.display = "block";
+					document.getElementById("panelRes").style.display = "none"; 
+					document.getElementById("panelDev").style.display = "none"; 
+					document.getElementById("panelAbout").style.display = "none"; 
+				}
+			</script>
+			<script>function showAboutPanel() { 
+					document.getElementById("panelAbout").style.display = "block";
+					document.getElementById("panelRes").style.display = "none"; 
+					document.getElementById("panelDev").style.display = "none"; 
+					document.getElementById("panelCareers").style.display = "none"; 
 				}
 			</script>
 	</body>

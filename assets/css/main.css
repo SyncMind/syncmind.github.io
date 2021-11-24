@@ -126,12 +126,20 @@ body {
       padding: 5em 1.25em 1.25em 1.25em; } }
 
 			.callout {
-			  position: absolute;
+			  /* 
+        position: absolute;
 			  top: auto;
-			  left: auto;
-			  margin-left: 2em;
-			  max-width: 600px;
+			  right: auto;
+			  margin-right: 5em;
+			  max-width: 800px;
 			  opacity:0.5;
+        */
+        position: absolute;
+        top: -60%;
+        right: 5%;
+        width: 40%;
+        height: max-content;
+        opacity:0.9;
 			}
 
 			.callout-header {
@@ -162,7 +170,19 @@ body {
 			  opacity:1;
 			}
 
-			#panel {
+			/* #panel {
+			  display: none;
+			} */
+			#panelRes {
+			  display: none;
+			}
+      #panelDev {
+			  display: none;
+			}
+      #panelCareers {
+			  display: none;
+			}
+      #panelAbout {
 			  display: none;
 			}
 /* BG */
