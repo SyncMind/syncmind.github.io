@@ -79,7 +79,7 @@ body {
 .content {
   position: fixed;
   top: 28%;
-  left: 5%;
+  left: 6%;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -95,7 +95,7 @@ body {
   	color: #f1f1f1;
   	width: 100%;
   	padding: 20px;
-  }
+     }
 
 }
 
@@ -120,20 +120,21 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #030C15;
+top: -2em;
 }
 
 #navbar a {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 4px 8px;
+  padding: 10px 15px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #site-title {
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   position: relative;
   color: #ffffff;
   text-align: center;
@@ -187,9 +188,15 @@ body {
 .footer-text {  
 position: fixed;  
 left: 0px;  
-bottom: 20px;  
+bottom: 0px;  
 right: 0px;
 padding: 30px;
 color: white;  
 text-align: left;  
+}
+
+.termsnc {
+	text-decoration: none; 
+	color: inherit;
+	opacity: 0.3;
 }
