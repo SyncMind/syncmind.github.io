@@ -10,7 +10,7 @@ html {
 
 body {
   background: #030C15;
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Ubuntu', sans-serif;
   }
 
@@ -19,7 +19,7 @@ body {
         		  position: relative;
         		  width: 40%;
 			  min-width: 300px;
-			  height: calc(100vh - 70vh);
+			  height: calc(100vh - 58vh);
         		  overflow-y:auto;
         		  opacity:1;
 			}
@@ -28,16 +28,15 @@ body {
 			  padding: 0px 0px;
 			  font-size: 20px;
 			  color: white;
-			  font-size: 15px;
+			  font-size: 18px;
 			}
 
 			.callout-container {
 			  position: relative;
 			  top: -1em;
 			  padding: 0px 0px;
-			  font-size: 17px;
+			  font-size: 15px;
 			  color: white;
-			  font-size: 13px;
 			}
 
 			.closebtn {
@@ -79,11 +78,25 @@ body {
 
 .content {
   position: fixed;
-  top: 35%;
+  top: 28%;
   left: 5%;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+}
+
+@media (min-width: 480px) {
+
+  /* your conditional / responsive CSS inside this condition */
+  .content {
+  	position: fixed;
+  	top: 45%;
+  	left: 5%;
+  	color: #f1f1f1;
+  	width: 100%;
+  	padding: 20px;
+  }
+
 }
 
 .footer-text a {
@@ -115,7 +128,7 @@ body {
   text-align: center;
   padding: 4px 8px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #site-title {
