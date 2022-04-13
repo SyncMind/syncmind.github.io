@@ -207,5 +207,6 @@ text-align: left;
 .termsnc {
 	text-decoration: none; 
 	color: inherit;
+	cursor: pointer;
 	opacity: 0.3;
 }
