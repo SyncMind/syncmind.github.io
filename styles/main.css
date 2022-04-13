@@ -90,7 +90,7 @@ body {
   /* your conditional / responsive CSS inside this condition */
   .content {
   	position: fixed;
-  	top: 45%;
+  	top: 42%;
   	left: 5%;
   	color: #f1f1f1;
   	width: 100%;
