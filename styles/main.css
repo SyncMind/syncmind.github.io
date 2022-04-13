@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+html {
+    scrollbar-color: darkgray black;
+    scrollbar-width: thin;
+}
+
 body {
   background: #030C15;
   font-size: 16px;
@@ -14,7 +19,7 @@ body {
         		  position: relative;
         		  width: 40%;
 			  min-width: 300px;
-			  height: calc(100vh - 65vh);
+			  height: calc(100vh - 70vh);
         		  overflow-y:auto;
         		  opacity:1;
 			}
@@ -23,7 +28,7 @@ body {
 			  padding: 0px 0px;
 			  font-size: 20px;
 			  color: white;
-			  font-size: 14px;
+			  font-size: 15px;
 			}
 
 			.callout-container {
@@ -32,7 +37,7 @@ body {
 			  padding: 0px 0px;
 			  font-size: 17px;
 			  color: white;
-			  font-size: 12px;
+			  font-size: 13px;
 			}
 
 			.closebtn {
@@ -74,7 +79,7 @@ body {
 
 .content {
   position: fixed;
-  top: 40%;
+  top: 35%;
   left: 5%;
   color: #f1f1f1;
   width: 100%;
