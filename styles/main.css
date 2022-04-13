@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Hurricane&family=Poppins&family=Ubuntu&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #030C15;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  }
+
+/* Callout boxes start here */
+			.callout {
+        		  position: relative;
+        		  width: 40%;
+			  min-width: 300px;
+			  height: calc(100vh - 65vh);
+        		  overflow-y:auto;
+        		  opacity:1;
+			}
+
+			.callout-header {
+			  padding: 0px 0px;
+			  font-size: 20px;
+			  color: white;
+			  font-size: 14px;
+			}
+
+			.callout-container {
+			  position: relative;
+			  top: -1em;
+			  padding: 0px 0px;
+			  font-size: 17px;
+			  color: white;
+			  font-size: 12px;
+			}
+
+			.closebtn {
+			  position: relative;
+			  top: -1em;
+			  left: 0em;
+			  color: white;
+			  font-size: 9px;
+			  cursor: pointer;
+			}
+
+			.closebtn:hover {
+			  color: lightgrey;
+			  opacity:1;
+			}
+
+			#panelRes {
+			  display: none;
+			}
+      		#panelDev {
+			  display: none;
+			}
+      		#panelCareers {
+			  display: none;
+			}
+      		#panelAbout {
+			  display: none;
+			}
+/* Callout boxes end here */
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  top: 40%;
+  left: 5%;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer-text a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: #0087ca;
+}
+
+/* Menu Starts Here */
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #030C15;
+}
+
+#navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#site-title {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  padding: 2px 5px;
+}
+
+.hover-underline-animation { 
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.topnav-left {
+  float: left;
+}
+
+.topnav-right {
+  float: right;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+/* Menu Ends Here */
+
+.footer-text {  
+position: fixed;  
+left: 0px;  
+bottom: 20px;  
+right: 0px;
+padding: 30px;
+color: white;  
+text-align: left;  
+}

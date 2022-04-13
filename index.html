@@ -1,173 +1,151 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>SyncMind.org</title>
-		<meta name="description" content="We think and thus, we enable. SyncMind is an up and coming start-up dedicated to re-imagining the next generation of computing devices." />
-		<meta charset="utf-8" />
-		<meta name="keywords" content="syncmind, syncmindai, syncmind.ai, syncmind.org, brain computer interface startup, brain signal processing, biomedical electronics, ultra low power machine learning, ai on edge, real time ai, machine learning for biology, machine learning of neural signal processing, ecog signal processing"/>
-		<link rel="shortcut icon" type="image/png" href="./images/favicon1.png"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
-		<link rel="stylesheet" href="./assets/canvas/style.css">
-		<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-	</head>
-	<body class="is-preload">
-	
-	<!-- partial:index.partial.html -->
-	<!--
-	  Click and drag to attract
-	  Right click to repulse
-	  Mouse-wheel click to create a time dilation field
-	  Use the Controls to decrease or increase
-	  the particle count to tweak performance.
-	-->
-	<canvas id="swarm"></canvas>
-	<!-- partial -->
-	<script src='./assets/canvas/bcmyD.js'></script>
-	<script src='./assets/canvas/codepen-utilities.min.js'></script>
-	<script src='./assets/canvas/Stats.js'></script>
-	<script src='./assets/canvas/dat.gui.min.js'></script>
-	<script  src="./assets/canvas/script.js"></script>
+<head>
+	<title>SyncMind.org</title>
+	<meta name="description" content="We think and thus, we enable. SyncMind is an up and coming start-up dedicated to re-imagining the next generation of computing devices." />
+	<meta charset="utf-8" />
+	<meta name="keywords" content="syncmind, syncmindai, syncmind.ai, syncmind.org, brain computer interface startup, brain signal processing, biomedical electronics, ultra low power machine learning, ai on edge, real time ai, machine learning for biology, machine learning of neural signal processing, ecog signal processing"/>
+	<link rel="shortcut icon" type="image/png" href="./images/favicon1.png"/>
+	<meta property="og:image" content="./images/bg05.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./styles/main.css">
+</head>
+  
+<body>
 
-		<!-- Header -->
-			<header id="header">
-				<img src="./images/logo-syncmind.png" alt="syncmind_logo.png" style="pointer-events: none; width:70%; height:auto; max-width:600px; max-height:auto; margin: auto auto 1.5em 2em;">
-				<!-- <h1>SyncMind</h1> -->
-				<ul class="menu" style="margin: auto auto 2em 2em;">
-					<li> <a href="#" onclick="showResearchPanel()">Research</a></li>
-					<li> <a href="#" onclick="showDeveloperPanel()">Developer</a></li>
-					<li> <a href="#" onclick="showCareersPanel()">Careers</a></li>
-					<li> <a href="#" onclick="showAboutPanel()">About</a></li>					
-				</ul>
+<video autoplay muted loop id="myVideo">
+  <source src="images/vid_bg_particle.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
-			<div class="callout" id="panelRes">
+<div id="navbar">
+  <div id="site-title"><a href="https://syncmind.org/" style="text-decoration: none; font: inherit; font-size:inherit; margin:auto;">SyncMind | AI</a><hr></div>
+  <div class="topnav-right">
+    <div class="hover-underline-animation"><a href="#" onclick="showResearchPanel()">Research</a></div>
+    <div class="hover-underline-animation"><a href="#" onclick="showDeveloperPanel()">Developer</a></div>
+    <div class="hover-underline-animation"><a href="#" onclick="showCareersPanel()">Careers</a></div>
+    <div class="hover-underline-animation"><a href="#" onclick="showAboutPanel()">About</a></div>
+  </div>
+</div>
+
+<div class="content">
+	<img src="./images/logo-syncmind.png" alt="syncmind_logo.png" style="pointer-events: none; width:70%; height:auto; min-width: 275px; min-height: auto; max-width:600px; max-height:auto;"><br><br>
+
+	<div class="callout" id="panelRes">
 			  <div class="callout-header">Research</div>
-			  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+			  <span class="closebtn" onclick="this.parentElement.style.display='none';">[close]</span>
 			  <div class="callout-container">
-			    <p style="color:black;">We are a full-stack computing and semiconductor engineering company specializing in streamlining the process of interpretation of neural signals from the brain through our integrated AI development platform.</p>
-				<p style="color:black;">With SyncMind’s integrated Neural Platform, neuroscientists and neurosurgeons can accelerate research and diagnosis of neural ailments, pave the way for advanced neuro-electronic therapy and bio-electronics interface applications.</p>
-				<p style="color: black;"><center><img src="images/b1.png" width="25%"" height="auto"></center></p>
-				<p style="color:black;">We bring together a community of engineers, mathematicians, cryptographers, data scientists, geneticists and neuroscientists to create a reliable, secure and cutting edge platform to extend the reaches of our understanding of the human brain.</p>
+			    <p>We are a full-stack computing and semiconductor engineering organization specializing in streamlining the process of interpretation of neural signals from the human brain.</p>
+				<p>SyncMind is developing an integrated Neural Platform which would aid neuroscientists and neurosurgeons accelerate research and diagnosis of neural ailments, pave the way for advanced neuro-electronic therapy and develop new applications of bio-electronics interfaces.</p>
+				<!-- <p><center><img src="images/b1.png" width="25%"" height="auto"></center></p> -->
+				<p>We aim to bring together a community of engineers, mathematicians, cryptographers, data scientists, geneticists and neuroscientists to create a reliable, secure and cutting-edge platform to extend the reaches of our understanding of the human brain.</p>
 			  </div>
 			</div>
 
 			<div class="callout" id="panelDev">
 				<div class="callout-header">Developer</div>
-				<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">[close]</span>
 				<div class="callout-container">
-				  <p style="color:black;">We are building the full-stack computing platform for Neural Signal Processing, Deep Brain Stimulation, and AI for brain-computer interface applications.</p>
-				  <p style="color:black;">Our work covers development in advanced architectures in Memory, Processing Systems, Compilation tool-chain, Kernel, Architectural and Microelectronics layers for the development of the integrated platform for neural signal processing and inference.</p>
-				  <p style="color:black;">We welcome talented engineers and developers in our team to work with us across all the layers of the computing stack.</p>
-				  <p style="color:black;">You can <a href="mailto:support@syncmind.org?subject=I want to contribute to SyncMind"> e-mail us at support@syncmind.org</a> to contribute as a researcher or an open-source developer.</p>
+				  <p>We are building the full-stack computing platform for Neural Signal Processing, Deep Brain Stimulation, and AI for brain-computer interface applications.</p>
+				  <p>Our work covers development of AI algorithms for time-series signal processing of ECoG, LFP and AP signals, design of optimized architectures in Memory and Processing System, and development of compilation tool-chain, Microarchitecture and Semiconductor devices for our integrated Neural Signal Processing and Inference platform.</p>
+				  <p>We welcome talented engineers and developers in our team to work with us across all the layers of the computing stack.</p>
+				  <p>You can e-mail us at <a href="mailto:support@syncmind.org?subject=I want to contribute to SyncMind" style="text-decoration: underline dotted;">support@syncmind.org</a> to tell us more about yourself and contribute as a researcher or an open-source developer.</p>
 				</div>
 			  </div>
 
 			  <div class="callout" id="panelCareers">
 				<div class="callout-header">Careers</div>
-				<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">[close]</span>
 				<div class="callout-container">
-					<p style="color:black;"></br>We're sorry, currently we have no open positions.</p>
-					<p style="color:black;">To enquire about research projects with us, you can email our lead developers at <a href="mailto:support@syncmind.org?subject=Career at SyncMind">support@syncmind.org</a>.</p>
+					<p></br>Currently we have no open positions.</p>
+					<p>To enquire about research projects with us, you can email our lead developers at <a href="mailto:support@syncmind.org?subject=Career at SyncMind" style="text-decoration: underline dotted;">support@syncmind.org</a>.</p>
 				</div>
 			  </div>
 
-			  <div class="callout" id="panelAbout">
+<div class="callout" id="panelAbout">
 				<div class="callout-header">About</div>
-				<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">[close]</span>
 				<div class="callout-container">
-					<p style="color:black;"></p>
-						<!-- <strong style="color:black; font-size: large;">Our Team:</strong><br>
-							<style type="text/css">
-							.tg  {border-collapse:collapse; border-spacing:0;}
-							.tg td{border-color:black; border-style:solid;border-width:0px;font-size:14px;
-							  overflow:hidden;padding:10px 5px;word-break:normal;}
-							.tg th{border-color:black;border-style:solid;border-width:0px;font-size:14px;
-							  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-							.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-							.tg .tg-0lax{text-align:left;vertical-align:top}
-							</style>
-							<table class="tg">
-							<tbody>
-							  <tr>
-								<th class="tg-0lax"></th>
-								<th class="tg-0pky" style="font-size: large;"><strong style="color:black;">&emsp; Amitabh Yadav</strong><br>&emsp; Research Fellow, CERN</th>
-								<th class="tg-0pky"></th>
-								<th class="tg-0pky" style="font-size: large;"><strong style="color:black;"> &emsp; &emsp; Aurojyoti Das</strong><br> &emsp; &emsp; Ph.D. Candidate, imec</th>
-								<th class="tg-0lax"></th>
-								<th class="tg-0lax"></th>
-							  </tr>
-							</tbody>
-							</table> -->
-					        Contact Form:
-                                                  <form action="https://send.pageclip.co/ZBCYn3hgBwW7jTtY8IlD1q7YzbSinTle/contact-form" class="pageclip-form" method="post">
-						  <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-						  </br>
-						  <!-- It looks like you are creating a contact form. These email and subject fields are special -->
-						  <!-- See https://pageclip.co/docs#special-fields for more info -->
-						  Email &nbsp;: <input type="email" name="email" size="20" value="" /> </br>
-						  Subject: <input type="text" name="subject" size="20" value="" /> </br>
-						  Message: <textarea name="body" rows="2" cols="20"></textarea>
-						  <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-						  <button type="submit" class="pageclip-form__submit">
-						    <span>Send</span>
-						  </button>
-                                                  </form>
-						Email: &emsp; <a href="mailto:support@syncmind.org?subject=Contact Form">support@syncmind.org</a><br>
-						Social: &emsp; <a href="https://www.twitter.com/syncmindai/" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-						&nbsp; &nbsp; <a href="https://www.linkedin.com/company/syncmindai/" class="icon brands fa-linkedin"><span class="label" s>LinkedIn</span></a>
+					<p>
+						Email: &emsp; <a href="mailto:support@syncmind.org?subject=Contact Form" style="text-decoration: underline dotted;">support@syncmind.org</a><br>
+						<!-- Social: &emsp; <a href="https://www.twitter.com/syncmindai/" class='fa fa-twitter' style="text-decoration: none;"><span class="label"> Twitter</span></a>
+						&nbsp; &nbsp; <a href="https://www.linkedin.com/company/syncmindai/" class='fa fa-linkedin' style="text-decoration: none;"><span class="label"> LinkedIn</span></a> -->
 					</p>
 				</div>
-			  </div>
 
-			</header>
+</div> <!-- class content ends here -->
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.twitter.com/syncmindai/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://www.linkedin.com/company/syncmindai/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<!--<li><a href="https://www.facebook.com/SyncMindAI/" class="icon brands fa-facebook"><span class="label">Facebook</span></a</li>
-					<li><a href="https://www.instagram.com/SyncMindAI/" class="icon brands fa-instagram"><span class="label">Instagram</span></a</li>
-					<li><a href="https://github.com/SyncMind/" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
-					<li><a href="mailto:support@syncmind.org" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>SyncMind &copy; 2021.</li>
-				</ul>
-			</footer>
+<div class="footer-text">
+	<a href="https://www.twitter.com/syncmindai/"><i class='fa fa-twitter' style='font-size:24px'></i></a> 
+	<a href="https://github.com/SyncMind/"><i class='fa fa-github' style='font-size:24px'></i></a> 
+	<a href="https://www.linkedin.com/company/syncmindai/"><i class='fa fa-linkedin' style='font-size:24px'></i></a>
+	<!--<a href="mailto:support@syncmind.org"><i class='fa fa-envelope' style='font-size:24px'></i></a> -->
+<p style="text-align:left;">
+     SyncMind &copy; 2021-22. <span style="float:right; font-size:9pt; color: #636363;" title="will be updated shortly"><a href="#" style="text-decoration: none; color: inherit;">[Terms & Conditions]</a></span>
+</p>
+</div>
 
-		<!-- Scripts -->
-			<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-					
-			<script src="assets/js/main.js"></script>
-			<script>function showResearchPanel() { 
-					document.getElementById("panelRes").style.display = "block";
-					document.getElementById("panelDev").style.display = "none"; 
-					document.getElementById("panelCareers").style.display = "none"; 
-					document.getElementById("panelAbout").style.display = "none"; 
-				}
-			</script>
-			<script>function showDeveloperPanel() { 
-					document.getElementById("panelDev").style.display = "block";
-					document.getElementById("panelRes").style.display = "none"; 
-					document.getElementById("panelCareers").style.display = "none"; 
-					document.getElementById("panelAbout").style.display = "none"; 
-				}
-			</script>
-			<script>function showCareersPanel() { 
-					document.getElementById("panelCareers").style.display = "block";
-					document.getElementById("panelRes").style.display = "none"; 
-					document.getElementById("panelDev").style.display = "none"; 
-					document.getElementById("panelAbout").style.display = "none"; 
-				}
-			</script>
-			<script>function showAboutPanel() { 
-					document.getElementById("panelAbout").style.display = "block";
-					document.getElementById("panelRes").style.display = "none"; 
-					document.getElementById("panelDev").style.display = "none"; 
-					document.getElementById("panelCareers").style.display = "none"; 
-				}
-			</script>
-					
-	</body>
+<!-- For Video -->
+<script>
+	var video = document.getElementById("myVideo");
+
+	function myFunction() {
+	  if (video.paused) {
+	    video.play();
+	    btn.innerHTML = "Pause";
+	  } else {
+	    video.pause();
+	    btn.innerHTML = "Play";
+	  }
+	}
+</script>
+
+<!-- For Sticky Menu -->
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+  	}
+	}
+</script>
+
+<!-- For panels -->
+	<script>
+	function showResearchPanel() { 
+		document.getElementById("panelRes").style.display = "block";
+		document.getElementById("panelDev").style.display = "none"; 
+		document.getElementById("panelCareers").style.display = "none"; 
+		document.getElementById("panelAbout").style.display = "none"; 
+	}
+	function showDeveloperPanel() { 
+		document.getElementById("panelDev").style.display = "block";
+		document.getElementById("panelRes").style.display = "none"; 
+		document.getElementById("panelCareers").style.display = "none"; 
+		document.getElementById("panelAbout").style.display = "none"; 
+	}
+	function showCareersPanel() { 
+		document.getElementById("panelCareers").style.display = "block";
+		document.getElementById("panelRes").style.display = "none"; 
+		document.getElementById("panelDev").style.display = "none"; 
+		document.getElementById("panelAbout").style.display = "none"; 
+	}
+	function showAboutPanel() { 
+		document.getElementById("panelAbout").style.display = "block";
+		document.getElementById("panelRes").style.display = "none"; 
+		document.getElementById("panelDev").style.display = "none"; 
+		document.getElementById("panelCareers").style.display = "none"; 
+	}
+			
+	</script>
+
+</body>
 </html>
