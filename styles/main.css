@@ -120,7 +120,17 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #030C15;
-top: -2em;
+  top: -2em;
+  cursor: pointer;
+}
+
+#navbar span {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 #navbar a {
