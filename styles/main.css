@@ -188,7 +188,7 @@ top: -2em;
 .footer-text {  
 position: fixed;  
 left: 0px;  
-bottom: 0px;  
+bottom: -25px;  
 right: 0px;
 padding: 30px;
 color: white;  
