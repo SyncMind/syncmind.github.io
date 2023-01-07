@@ -1,0 +1,152 @@
+body {
+	color: black;
+	background-color: white; 
+	font-family: -apple-system, "Segoe UI", "PT Sans", sans-serif;
+	line-height: 150%;
+	font-size: 14pt;
+
+	min-height: 100%;
+	max-width: 80%;
+	padding-top: 0px; 
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#myVideo {
+  position: fixed;
+  z-index:-1;
+  left: 0;
+  top:0;
+  height: 100vh;
+  width:16%;
+  object-fit:cover;
+  display:block;
+}
+
+#container {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   z-index:100;
+   min-width: 480px;
+   margin: 2% auto auto 25%;
+   padding: 25px;
+   width: 58%;
+   line-height:1.5;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: verdana, sans-serif;
+}
+
+pre {
+	line-height: 150%;
+	
+	overflow-x: auto;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+}
+
+ul {
+	list-style-type:disc;
+}
+
+a:link {
+  color:  #2980b9 ;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color:  #2980b9 ;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2980b9 ;
+  background-color: transparent;
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+}
+
+a:active {
+  color: #2980b9 ;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.dark-mode {
+	background-color: black;
+	color: #D3D3D3;
+}
+
+
+@media print
+{
+    	.noprint{visibility: hidden;}
+
+	#container {
+        	height: auto;
+		margin: 0;
+		padding: 0;
+		min-width:100%;
+        	font-size: 11pt; /* changing to 10pt has no impact */
+	}
+}
+
+#fixed-elements {
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  right: 5px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: transparent;
+  color: white;
+}
+
+.fa-twitter {
+  background: transparent;
+  color: white;
+}
+
+.fa-google {
+  background: transparent;
+  color: white;
+}
+
+.fa-linkedin {
+  background: transparent;
+  color: white;
+}
+
+.fa-youtube {
+  background: transparent;
+  color: white;
+}
+
+.fa-instagram {
+  background: transparent;
+  color: white;
+}
+
+.fa-github {
+  background: transparent;
+  color: white;
+}

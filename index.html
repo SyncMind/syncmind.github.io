@@ -1,151 +1,214 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SyncMind.org</title>
-	<meta name="description" content="We think and thus, we enable. SyncMind is an up and coming start-up dedicated to re-imagining the next generation of computing devices." />
-	<meta charset="utf-8" />
-	<meta name="keywords" content="syncmind, syncmindai, syncmind.ai, syncmind.org, brain computer interface startup, brain signal processing, biomedical electronics, ultra low power machine learning, ai on edge, real time ai, machine learning for biology, machine learning of neural signal processing, ecog signal processing"/>
-	<link rel="shortcut icon" type="image/png" href="./images/favicon1.png"/>
-	<meta property="og:image" content="./images/bg05.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./styles/main.css">
+<title>SyncMind</title>
+<meta name="description" content="We think and thus, we enable. SyncMind is an early stage start-up dedicated to re-imagining the next generation of computing devices." />
+<meta name="keywords" content="syncmind, syncmindai, syncmind.ai, syncmind.org, brain computer interface startup, brain signal processing, biomedical electronics, ultra low power machine learning, ai on edge, real time ai, machine learning for biology, machine learning of neural signal processing, ecog signal processing"/>
+<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="syncmind.org">
+<link rel="stylesheet" href="assets/style.css">
+<link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+</style>
+                
 </head>
-  
 <body>
 
 <video oncontextmenu="return false;" autoplay muted loop id="myVideo">
-  <source src="images/vid_bg_particle.mp4" type="video/mp4">
+  <source src="assets/particle.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+<div id="container">
 
-<div id="navbar">
-  <div id="site-title"><a href="https://syncmind.org/" style="text-decoration: none; font: inherit; font-size:inherit; margin:auto;">SyncMind | AI</a><hr></div>
-  <div class="topnav-right">
-    <div class="hover-underline-animation"><span onclick="showResearchPanel()">Research</span></div>
-    <div class="hover-underline-animation"><span onclick="showDeveloperPanel()">Developer</span></div>
-    <div class="hover-underline-animation"><span onclick="showCareersPanel()">Careers</span></div>
-    <div class="hover-underline-animation"><span onclick="showAboutPanel()">About</span></div>
-  </div>
+<h2><span style="color:red;">|</span> <span style="color:white;">infinite </span> 
+  <a href="" class="typewrite" data-period="2000" data-type='[ "computations", "creativity", "scale", "intelligence","possibilities"]'>
+    <span class="wrap"></span>
+  </a>
+</h2>
+<!-- <span id="quotetext" style="font-family:'Lucide Console', monospace;font-size:12pt;color:white;"></span> -->
+
+<h5 style="color: white;cursor:pointer;padding:5px;font-family:-apple-system, "Segoe UI", "PT Sans", sans-serif;"><a href="./careers/" style="text-decoration:none; color:white; cursor:pointer;">VIEW CAREERS &#187;</a></h5>
+
+
+<!-- INDEX -->
+<div style="position:fixed;bottom:8%;">
+<!-- archive -->
+
+<!-- Applications -->
+<h5 style="cursor:pointer;color: white;font-family:-apple-system, "Segoe UI", "PT Sans", sans-serif;"><a href="./applications/" style="text-decoration:none; color:white; cursor:pointer;">APPLICATIONS</a></h5>
+
+<!-- Research -->
+<h5 style="cursor:pointer;color: white;font-family:-apple-system, "Segoe UI", "PT Sans", sans-serif;"><a href="./research/" style="text-decoration:none; color:white; cursor:pointer;">RESEARCH</a></h5>
+
+<!-- About -->
+<h5 style="cursor:pointer;color: white;font-family:-apple-system, "Segoe UI", "PT Sans", sans-serif;"><a href="./about/" style="text-decoration:none; color:white; cursor:pointer;">ABOUT</a></h5>
+
+<span style="color:white;">
+| 
+<a href="https://www.twitter.com/syncmindai" class="fa fa-twitter" style="text-decoration:none; color:white; cursor:pointer;"></a> |
+<a href="https://www.linkedin.com/company/syncmindai" class="fa fa-linkedin" style="font-size:14pt;text-decoration:none; color:white; cursor:pointer;"></a> |
+<a href="https://www.github.com/syncmind" class="fa fa-github" style="text-decoration:none; color:white; cursor:pointer;"></a> |
+</span>
+<!-- end archive -->
 </div>
+<!-- end INDEX -->
 
-<div class="content">
-	<img src="./images/logo-syncmind.png" alt="syncmind_logo.png" style="pointer-events: none; width:70%; height:auto; min-width: 275px; min-height: auto; max-width:600px; max-height:auto;"><br><br>
 
-	<div class="callout" id="panelRes">
-			  <div class="callout-header"><strong>Research</strong></div>
-			  <span class="closebtn" onclick="this.parentElement.style.display='none';">[close]</span>
-			  <div class="callout-container">
-			    <p>We are a full-stack computing and semiconductor engineering organization specializing in streamlining the process of interpretation of neural signals from the human brain.</p>
-				<p>SyncMind is developing an integrated Neural Platform which would aid neuroscientists and neurosurgeons accelerate research and diagnosis of neural ailments, pave the way for advanced neuro-electronic therapy and develop new applications of bio-electronics interfaces.</p>
-				<!-- <p><center><img src="images/b1.png" width="25%"" height="auto"></center></p> -->
-				<p>We aim to bring together a community of engineers, mathematicians, cryptographers, data scientists, geneticists and neuroscientists to create a reliable, secure and cutting-edge platform to extend the reaches of our understanding of the human brain.</p>
-			  </div>
-			</div>
-
-			<div class="callout" id="panelDev">
-				<div class="callout-header"><strong>Developer</strong></div>
-				<span class="closebtn" onclick="this.parentElement.style.display='none';">[close]</span>
-				<div class="callout-container">
-				  <p>We are building the full-stack computing platform for Neural Signal Processing, Deep Brain Stimulation, and AI for brain-computer interface applications.</p>
-				  <p>Our work covers development of AI algorithms for time-series signal processing, design of optimized architectures in Memory and Processing System, and development of compilation tool-chain, Microarchitecture and Semiconductor devices for our integrated Neural Signal Processing and Inference platform.</p>
-				  <p>We welcome talented engineers and developers in our team to work with us across all the layers of the computing stack.</p>
-				  <p>You can e-mail us at <a href="mailto:support@syncmind.org?subject=I want to contribute to SyncMind" style="text-decoration: underline dotted; color: #0087FF;">support@syncmind.org</a> to tell us more about yourself and contribute as a researcher or an open-source developer.</p>
-				</div>
-			  </div>
-
-			  <div class="callout" id="panelCareers">
-				<div class="callout-header"><strong>Careers</strong></div>
-				<span class="closebtn" onclick="this.parentElement.style.display='none';">[close]</span>
-				<div class="callout-container">
-					<p></br>Currently we have no open positions.</p>
-					<p>To enquire about research projects with us, you can email our lead developers at <a href="mailto:support@syncmind.org?subject=Career at SyncMind" style="text-decoration: underline dotted; color: #0087FF;">support@syncmind.org</a>.</p>
-				</div>
-			  </div>
-
-<div class="callout" id="panelAbout">
-				<div class="callout-header"><strong>About</strong></div>
-				<span class="closebtn" onclick="this.parentElement.style.display='none';">[close]</span>
-				<div class="callout-container">
-					<p>
-						Email: &emsp; <a href="mailto:support@syncmind.org?subject=Contact Form" style="text-decoration: underline dotted; color: #0087FF;">support@syncmind.org</a><br>
-						<!-- Social: &emsp; <a href="https://www.twitter.com/syncmindai/" class='fa fa-twitter' style="text-decoration: none;"><span class="label"> Twitter</span></a>
-						&nbsp; &nbsp; <a href="https://www.linkedin.com/company/syncmindai/" class='fa fa-linkedin' style="text-decoration: none;"><span class="label"> LinkedIn</span></a> -->
-					</p>
-				</div>
-
-</div> <!-- class content ends here -->
-
-<div class="footer-text">
-	<a href="https://www.twitter.com/syncmindai/"><i class='fa fa-twitter' style='font-size:24px'></i></a> 
-	<a href="https://github.com/SyncMind/"><i class='fa fa-github' style='font-size:24px'></i></a> 
-	<a href="https://www.linkedin.com/company/syncmindai/"><i class='fa fa-linkedin' style='font-size:24px'></i></a>
-	<!--<a href="mailto:support@syncmind.org"><i class='fa fa-envelope' style='font-size:24px'></i></a> -->
-	<p>
-     SyncMind &copy; 2021-22. <span style="float:right; font-size:9pt; color: #636363;" title="will be updated shortly"><span class="termsnc">[Terms & Conditions]</span></span></p>
-
+</div> <!-- end of container -->
+<!-- fixed buttons -->
+ <div style="position: fixed; bottom: 2px; right: 5px; margin: 0 auto;"><span style="font-size:10pt;background-color:transparent;color:#2980b9;"> &copy; 2022-<span id="showyear"></span> SyncMind Research</span></div>
+<div style="color: white;position: fixed; bottom: 2px; left: 5px; margin: 0 auto;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hello@syncmind.org
 </div>
+<!-- <div id="fixed-elements" class="noprint"> -->
+<img src="assets/logo_syncmind.png" style="position:fixed; left:-250px; bottom:45%;max-width:40%;min-width:40%;-webkit-transform: rotate(270deg);-moz-transform: rotate(270deg);-o-transform: rotate(270deg);-ms-transform: rotate(270deg); transform: rotate(270deg);">
+<button onclick="collapseAll()" id="collapsebutton" style="position: fixed; top: 2px;  right: 36px; margin: 0 auto;display:none;background:transparent;color:white;">Collapse All</button>
+<button onclick="goToTop()" id="topbutton" style="position: fixed; top: 2px;  right: 2px; margin: 0 auto;display:none;background:transparent;color:white;">Top</button>
+<!-- <button onclick="toggleDarkMode()" style="position: fixed; top: 2px;  right: 5px; margin: 0 auto;font-family: 'Segoe UI', Verdana, Arial, Times;">Toggle Dark Mode</button> -->
+<!-- </div> -->
+<!-- end fixed buttons -->
 
-<!-- For Video -->
+<!-- flinstone -->
+<div style="color:white;position: fixed;bottom:5%; margin-left:75%; margin-top: 0;z-index:-2;" id="flinstone">
+<pre style="white-space:pre;font-family:monospace;font-size:7pt;">
+                                       .:::::::::. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    .::::::::::::::::, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  -'`;. ccccr -ccc,```'::,::::::: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     `,z$$$$$$c $$$F.:::::::::::: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      'c`$'cc,?$$$$ :::::`:. ``': &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      $$$`4$$$,$$$$ :::', &nbsp;&nbsp;` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                .. &nbsp;&nbsp;&nbsp;$ &nbsp;&nbsp;.`$$ &nbsp;&nbsp;$$"$L,`,d$c$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               d$$$$$cc,,d$c,ccP'J$$$$,,`"$F &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               $$$$$$$$$$$$$$$$$$$$$$$$$",$F &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               $$$$$$$$$$$ ccc,,"?$$$$$$c$$F &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               `?$$$PFF",zd$P??$$$c?$$$$$$$F &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size:10pt;">&copy;<span id="showyear"></span> Amitabh Yadav</span>&nbsp; .,cccc=,z$$$$$b$ c$$$ $$$$$$$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           cd$$$F",c$$$$$$$$P'<$$$$ $$$$$$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           $$$$$$$c,"?????"" &nbsp;$$$$$ $$$$$$F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       :: &nbsp;$$$$L ""??" &nbsp;&nbsp;&nbsp;.. d$$$$$ $$$$$P'.. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       ::: ?$$$$J$$cc,,,,,,c$$$$$$PJ$P".::::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  .,,,. `:: $$$$$$$$$$$$$$$$$$$$$P".::::::'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ,,ccc$$$$$$$$$P" `::`$$$$$$$$$$$$$$$$P".::::::::' c$c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  .,cd$$PPFFF????????" .$$$$$b, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+z$$$$$$$$$$$$$$$$$$$$bc.`'!>` -:.""?$$P".:::'``. `',<'` $$$$$$$$$c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+$$$$$$$$$$$$$$$$$$$$$$$$$c,=$$ ::::: &nbsp;-`',;;!!!,,;!!>. J$$$$$$$$$$b,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+?$$$$$$$$$$$$$$$$$$$$$$$$$$$cc,,,.` ."?&nbsp;&nbsp;$$$$$$$$$$$$$$$$$$$$$$$$$$l.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     ""??""" &nbsp;&nbsp;;!!!.$$$ `?$$$$$$P'!!!!; &nbsp;&nbsp;&nbsp;&nbsp;!!;.""?$$$$$$$$$$$$$$$$$$r &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               !!!'<$$$ :::.. &nbsp;.;!!!!!!; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!!!!!!!!!> &nbsp;"?$$$$$$$$$$$" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              !!!!>`?$F::::::::`!!!!!!!!! ?"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:!!!!!!!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  `!!!!>`::::: :: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;!!!!!!!!&nbsp;&nbsp;&nbsp;
+               ` &nbsp;&nbsp;&nbsp;`!!! `:::: ,, ;!!!!!!!'` &nbsp;&nbsp;&nbsp;&nbsp;;!!!!!!!!!!! &nbsp;&nbsp;&nbsp;
+                \;;;;!!!! :::: !!!!!!!!!!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;!!!!!!!!!!!!>&nbsp;&nbsp;
+                `!!!!!!!!> ::: !!!!!!!!!!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;!!!!!!!!!!!!!!>&nbsp;&nbsp;&nbsp;
+                 !!!!!!!!!!.` !!!!!!!!!!!!!;. ;!!!!!!!!!!!!!!!!> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  `!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   `!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       ?$$c``!!! d $$c,c$.`!',d$$$$$$$P &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           `$$$$$c,,d$ 3$$$$$$cc$$$$$$F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            `$$$$$$$$$b`$$$$$$$$$$$$$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             `$$$$$$$$$ ?$$$$$$$$$$$$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              `$$$$$$$$$ $$$$$$$$$$$$F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               `$$$$$$$$,?$$$$$$$$$$$'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                `$$$$$$$$ $$$$$$$$$$P &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  ?$$$$$$b`$$$$$$$$$F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                ,c$$$$$$$$c`$$"$$$$$$$cc,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            ,z$$$$$$$$$$$$$ $L')$$$$$$$$$$b,,,,, ,&nbsp;&nbsp;&nbsp;&nbsp;
+                       ,,-=P???$$$$$$$$$$PF $$$$$$$$$$$$$Lz =zr4%'&nbsp;&nbsp;&nbsp;&nbsp;
+                      `?'d$ $b = $$$$$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"???????$$$P &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         `"-"$$$$P"""" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</pre>
+</div>
+<!-- end flinstone -->
+
 <script>
-	var video = document.getElementById("myVideo");
+var quote = document.getElementById('quotetext');
+var titles = [
+	'"Premature Optimization is the root of all evil." — Donald Knuth',
+	'"If you optimize for everything, you will always be unhappy." — Donald Knuth',
+	'"The purpose of computation is insight, not numbers." — Richard Hamming, 1962',
+	'"If you think your users are idiots, only idiots will use it." — Linus Torvalds',
+	'"The ‘paradox’ is only a conflict between reality and your feeling of what reality ‘ought to be’" — Richard Feynman'
+];
 
-	function myFunction() {
-	  if (video.paused) {
-	    video.play();
-	    btn.innerHTML = "Pause";
-	  } else {
-	    video.pause();
-	    btn.innerHTML = "Play";
-	  }
-	}
+function newQuote () {
+    var i = (Math.random() * titles.length) | 0;
+    quote.innerText = titles[i];
+}
+
+newQuote();
 </script>
 
-<!-- For Sticky Menu -->
-	<script>
-	window.onscroll = function() {myFunction()};
-
-	var navbar = document.getElementById("navbar");
-	var sticky = navbar.offsetTop;
-
-	function myFunction() {
-	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky")
-	  } else {
-	    navbar.classList.remove("sticky");
-  	}
-	}
+<script>
+const year = new Date().getFullYear();
+document.getElementById("showyear").innerHTML = year;
 </script>
 
-<!-- For panels -->
-	<script>
-	function showResearchPanel() { 
-		document.getElementById("panelRes").style.display = "block";
-		document.getElementById("panelDev").style.display = "none"; 
-		document.getElementById("panelCareers").style.display = "none"; 
-		document.getElementById("panelAbout").style.display = "none"; 
-	}
-	function showDeveloperPanel() { 
-		document.getElementById("panelDev").style.display = "block";
-		document.getElementById("panelRes").style.display = "none"; 
-		document.getElementById("panelCareers").style.display = "none"; 
-		document.getElementById("panelAbout").style.display = "none"; 
-	}
-	function showCareersPanel() { 
-		document.getElementById("panelCareers").style.display = "block";
-		document.getElementById("panelRes").style.display = "none"; 
-		document.getElementById("panelDev").style.display = "none"; 
-		document.getElementById("panelAbout").style.display = "none"; 
-	}
-	function showAboutPanel() { 
-		document.getElementById("panelAbout").style.display = "block";
-		document.getElementById("panelRes").style.display = "none"; 
-		document.getElementById("panelDev").style.display = "none"; 
-		document.getElementById("panelCareers").style.display = "none"; 
-	}
-			
-	</script>
+<script>
+	var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
 
 </body>
 </html>
